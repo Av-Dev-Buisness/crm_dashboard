@@ -25,7 +25,7 @@ export function Widget({
 }: WidgetProps) {
   return (
     <Card
-      className={`group h-full flex flex-col border-0 bg-white/80 shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl ${className}`}
+      className={`group h-full flex flex-col border border-gray-300 bg-white/80 shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl ${className}`}
     >
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 flex-shrink-0">
         <div className="flex items-center gap-2 flex-1 min-w-0">

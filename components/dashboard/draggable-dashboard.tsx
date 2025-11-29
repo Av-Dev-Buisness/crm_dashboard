@@ -328,21 +328,21 @@ function PerformanceSummary({ stats }: { stats: DraggableDashboardProps["stats"]
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between rounded-lg border border-gray-200 bg-white/50 p-4">
+      <div className="flex items-center justify-between rounded-lg border border-gray-300 bg-white/50 p-4">
         <div>
           <p className="text-sm font-medium text-gray-600">Average Lead Value</p>
           <p className="mt-1 text-2xl font-bold text-gray-900">{formatCurrency(avgLeadValue)}</p>
         </div>
         <DollarSign className="h-8 w-8 text-emerald-600" />
       </div>
-      <div className="flex items-center justify-between rounded-lg border border-gray-200 bg-white/50 p-4">
+      <div className="flex items-center justify-between rounded-lg border border-gray-300 bg-white/50 p-4">
         <div>
           <p className="text-sm font-medium text-gray-600">Tasks Completion Rate</p>
           <p className="mt-1 text-2xl font-bold text-gray-900">{completionRate}%</p>
         </div>
         <CheckSquare className="h-8 w-8 text-blue-600" />
       </div>
-      <div className="flex items-center justify-between rounded-lg border border-gray-200 bg-white/50 p-4">
+      <div className="flex items-center justify-between rounded-lg border border-gray-300 bg-white/50 p-4">
         <div>
           <p className="text-sm font-medium text-gray-600">Active Projects</p>
           <p className="mt-1 text-2xl font-bold text-gray-900">{stats.projects}</p>

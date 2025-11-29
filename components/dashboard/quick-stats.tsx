@@ -55,7 +55,7 @@ export function QuickStats() {
         return (
           <div
             key={stat.label}
-            className="rounded-lg border border-gray-200 bg-white/50 p-4 backdrop-blur-sm"
+            className="rounded-lg border border-gray-300 bg-white/50 p-4 backdrop-blur-sm"
           >
             <div className="flex items-center justify-between">
               <div>

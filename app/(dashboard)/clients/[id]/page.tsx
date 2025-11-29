@@ -73,7 +73,7 @@ export default function ClientDetailPage({ params }: { params: Promise<{ id: str
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
-        <Card className="border-0 bg-white/80 shadow-lg backdrop-blur-sm">
+        <Card className="border border-gray-300 bg-white/80 shadow-lg backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="text-gradient">Contact Information</CardTitle>
           </CardHeader>
@@ -99,7 +99,7 @@ export default function ClientDetailPage({ params }: { params: Promise<{ id: str
           </CardContent>
         </Card>
 
-        <Card className="border-0 bg-white/80 shadow-lg backdrop-blur-sm">
+        <Card className="border border-gray-300 bg-white/80 shadow-lg backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="text-gradient">Statistics</CardTitle>
           </CardHeader>
@@ -125,7 +125,7 @@ export default function ClientDetailPage({ params }: { params: Promise<{ id: str
       </div>
 
       {leads.length > 0 && (
-        <Card className="border-0 bg-white/80 shadow-lg backdrop-blur-sm">
+        <Card className="border border-gray-300 bg-white/80 shadow-lg backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="text-gradient">Leads</CardTitle>
             <CardDescription>Leads associated with this client</CardDescription>
@@ -158,7 +158,7 @@ export default function ClientDetailPage({ params }: { params: Promise<{ id: str
       )}
 
       {tasks.length > 0 && (
-        <Card className="border-0 bg-white/80 shadow-lg backdrop-blur-sm">
+        <Card className="border border-gray-300 bg-white/80 shadow-lg backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="text-gradient">Tasks</CardTitle>
             <CardDescription>Tasks associated with this client</CardDescription>
@@ -191,7 +191,7 @@ export default function ClientDetailPage({ params }: { params: Promise<{ id: str
       )}
 
       {projects.length > 0 && (
-        <Card className="border-0 bg-white/80 shadow-lg backdrop-blur-sm">
+        <Card className="border border-gray-300 bg-white/80 shadow-lg backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="text-gradient">Projects</CardTitle>
             <CardDescription>Projects associated with this client</CardDescription>
@@ -226,7 +226,7 @@ export default function ClientDetailPage({ params }: { params: Promise<{ id: str
       )}
 
       {messages.length > 0 && (
-        <Card className="border-0 bg-white/80 shadow-lg backdrop-blur-sm">
+        <Card className="border border-gray-300 bg-white/80 shadow-lg backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="text-gradient">Messages</CardTitle>
             <CardDescription>Message history with this client</CardDescription>

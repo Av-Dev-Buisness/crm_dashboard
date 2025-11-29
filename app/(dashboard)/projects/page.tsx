@@ -43,7 +43,7 @@ export default function ProjectsPage() {
         <ProjectFormWrapper />
       </div>
 
-      <div className="rounded-xl border-0 bg-white/80 shadow-lg backdrop-blur-sm">
+      <div className="rounded-xl border border-gray-300 bg-white/80 shadow-lg backdrop-blur-sm">
         <Table>
           <TableHeader>
             <TableRow>
