@@ -68,8 +68,8 @@ export default function ClientDetailPage({ params }: { params: Promise<{ id: str
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-4xl font-bold text-gradient">{client.name}</h1>
-        <p className="mt-2 text-lg text-gray-600">Client details and related information</p>
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gradient">{client.name}</h1>
+        <p className="mt-1 sm:mt-2 text-sm sm:text-base lg:text-lg text-gray-600">Client details and related information</p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">

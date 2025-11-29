@@ -36,11 +36,23 @@ export const DEFAULT_LAYOUTS: DashboardLayout[] = [
   { i: "performanceSummary", x: 6, y: 7, w: 6, h: 6, minW: 4, minH: 4 },
 ]
 
+// Mobile-specific layout (single column stack)
+const MOBILE_LAYOUTS: DashboardLayout[] = [
+  { i: "quickStats", x: 0, y: 0, w: 12, h: 3, minW: 12, minH: 2 },
+  { i: "clients", x: 0, y: 3, w: 12, h: 4, minW: 12, minH: 3 },
+  { i: "leads", x: 0, y: 7, w: 12, h: 4, minW: 12, minH: 3 },
+  { i: "tasks", x: 0, y: 11, w: 12, h: 4, minW: 12, minH: 3 },
+  { i: "projects", x: 0, y: 15, w: 12, h: 4, minW: 12, minH: 3 },
+  { i: "value", x: 0, y: 19, w: 12, h: 4, minW: 12, minH: 3 },
+  { i: "recentActivity", x: 0, y: 23, w: 12, h: 6, minW: 12, minH: 4 },
+  { i: "performanceSummary", x: 0, y: 29, w: 12, h: 6, minW: 12, minH: 4 },
+]
+
 export function getDefaultLayouts(): DashboardPreferences["layouts"] {
   return {
     lg: DEFAULT_LAYOUTS,
     md: DEFAULT_LAYOUTS,
-    sm: DEFAULT_LAYOUTS,
+    sm: MOBILE_LAYOUTS,
   }
 }
 

@@ -43,7 +43,7 @@ export default function DashboardLayout({
   return (
     <div className="flex min-h-screen flex-col">
       <TopNav />
-      <main className="flex-1 bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 p-6">
+      <main className="flex-1 bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 p-4 sm:p-6">
         <div className="mx-auto max-w-7xl">{children}</div>
       </main>
     </div>

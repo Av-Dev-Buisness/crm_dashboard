@@ -226,8 +226,8 @@ export function DraggableDashboard({ stats }: DraggableDashboardProps) {
   // Use container width
   const displayWidth = containerWidth
 
-  // Ensure minimum width
-  const safeWidth = Math.max(displayWidth, 800)
+  // For mobile, use actual width; for desktop, ensure minimum width
+  const safeWidth = breakpoint === "sm" ? displayWidth : Math.max(displayWidth, 800)
 
   return (
     <div 
@@ -245,12 +245,12 @@ export function DraggableDashboard({ stats }: DraggableDashboardProps) {
         cols={12}
         rowHeight={60}
         width={safeWidth}
-        isDraggable={true}
-        isResizable={true}
+        isDraggable={breakpoint !== "sm"}
+        isResizable={breakpoint !== "sm"}
         draggableHandle=".drag-handle"
         compactType={null}
         preventCollision={false}
-        margin={[16, 16]}
+        margin={breakpoint === "sm" ? [8, 8] : [16, 16]}
         useCSSTransforms={true}
         containerPadding={[0, 0]}
         key={`grid-${safeWidth}-${breakpoint}`}

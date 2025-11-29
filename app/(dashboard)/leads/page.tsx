@@ -34,16 +34,16 @@ export default function LeadsPage() {
   }
 
   return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between">
+    <div className="space-y-4 sm:space-y-6">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-4xl font-bold text-gradient">Leads</h1>
-          <p className="mt-2 text-lg text-gray-600">Track and manage your leads</p>
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gradient">Leads</h1>
+          <p className="mt-1 sm:mt-2 text-sm sm:text-base lg:text-lg text-gray-600">Track and manage your leads</p>
         </div>
         <LeadFormWrapper />
       </div>
 
-      <div className="rounded-xl border border-gray-300 bg-white/80 shadow-lg backdrop-blur-sm">
+      <div className="rounded-xl border border-gray-300 bg-white/80 shadow-lg backdrop-blur-sm overflow-x-auto">
         <Table>
           <TableHeader>
             <TableRow>
