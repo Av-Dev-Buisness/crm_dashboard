@@ -23,11 +23,11 @@ const STORAGE_KEY = "crm_dashboard_layouts"
 export const DEFAULT_LAYOUTS: DashboardLayout[] = [
   // Quick Stats - top row, full width
   { i: "quickStats", x: 0, y: 0, w: 12, h: 3, minW: 4, minH: 2 },
-  // Main stat cards - 5 cards distributed uniformly (2, 2, 3, 2, 3) for better visual alignment
+  // Main stat cards - aligned to match bottom row split: 3 cards in left half (0-6), 2 cards in right half (6-12)
   { i: "clients", x: 0, y: 3, w: 2, h: 4, minW: 2, minH: 3 },
   { i: "leads", x: 2, y: 3, w: 2, h: 4, minW: 2, minH: 3 },
-  { i: "tasks", x: 4, y: 3, w: 3, h: 4, minW: 2, minH: 3 },
-  { i: "projects", x: 7, y: 3, w: 2, h: 4, minW: 2, minH: 3 },
+  { i: "tasks", x: 4, y: 3, w: 2, h: 4, minW: 2, minH: 3 },
+  { i: "projects", x: 6, y: 3, w: 3, h: 4, minW: 2, minH: 3 },
   { i: "value", x: 9, y: 3, w: 3, h: 4, minW: 2, minH: 3 },
   // Bottom widgets - side by side, aligned with top row
   { i: "recentActivity", x: 0, y: 7, w: 6, h: 6, minW: 4, minH: 4 },
